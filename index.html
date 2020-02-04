@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--	<link rel="Shortcut Icon" href="/assets/image/favicon.ico" type="image/x-icon">-->
+	<link rel="stylesheet" href="index.css">
+	<title>20200202</title>
+</head>
+<body>
+<div class="wrapper">
+
+</div>
+<script>
+
+  const str = `
+
+梦里醒来
+都是关于你
+想起你
+毫不费力
+但忘记你
+却要耗尽余生的力气
+像极了抽烟的人
+终生在抽与戒的矛盾中
+痛苦挣扎
+
+是谁说的
+时间能冲淡一切
+如像我这般掉进旋涡
+怕这话不会说的这么
+轻描淡写 波澜不惊
+我决定要忘记你
+用一切办法把你从脑海中驱逐
+制订最详尽的计划
+找数不胜数的学习资料
+时间表的计时也安排到分钟
+
+但
+思念还是在间歇的每一分钟里
+见缝插针
+挤进每一寸空间
+盘踞在
+原本属于你的
+每一个神经细胞
+病毒式蔓延……
+终于
+连梦境也没放过
+让我最后
+气若游丝的防御
+土崩瓦解
+
+此刻
+在这寂静漆黑的夜里
+我像个孤魂野鬼
+失魂落魄
+痴痴地望着窗外
+
+你过得好吗？
+我想你
+
+             2020/02/02
+`;
+  const Ddiv = document.getElementsByClassName('wrapper')[0];
+
+  const arr = str.split('\n');
+  for (let i = 0; i < arr.length; i++) {
+    const temp = document.createElement('p');
+    if(arr[i] === ''){
+      arr[i] = document.createElement('br');
+    }
+    temp.append(arr[i]);
+    Ddiv.append(temp);
+  }
+</script>
+</body>
+</html>
